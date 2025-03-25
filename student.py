@@ -1,9 +1,9 @@
 class GroceryManager:
-    def add_product(self, product_list: list, name: str, price: float, quantity: int = 1, *, category="General") -> None:
+    def add_product(self, products, name, price, quantity=1, category=None):
         # TODO: Implement this method
         pass
 
-    def total_inventory_value(self, product_list: list, price_fn: callable) -> float:
+    def total_inventory_value(self, products, price_modifier=lambda p: p["price"]):
         # TODO: Implement this method
         pass
 
